@@ -14,8 +14,11 @@ namespace ConsoleApp2
             //
             List<Student> students= Read.readStudents(inFile);
             //
+            
             if (type == "xml") 
                 Write.writeToXML(outFile,students);
+            else if (type == "json")
+                Write.writeToJson(outFile, students);
         }        
     }
 }

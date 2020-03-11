@@ -34,7 +34,9 @@ namespace ConsoleApp2
 [Serializable]
 public class Uczelnia
 { 
-    public List<Student> studenci { get; set; }
+   
     [XmlAttribute] public String createdAt { get; set; }
     [XmlAttribute] public String author { get; set; }
+    
+    public List<Student> studenci { get; set; }
 }
